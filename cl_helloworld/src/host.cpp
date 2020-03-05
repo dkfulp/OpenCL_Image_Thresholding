@@ -196,7 +196,6 @@ int main(int argc, char **argv) {
     }
 
     // Read in file 
-    std::ofstream outf;
     outf.open("serial_coins.ascii.pgm", std::ios::out);
  
     // Check the file is open correctly
@@ -220,7 +219,7 @@ int main(int argc, char **argv) {
 
     int match = 0;
     for (int i = 0; i < data_size; i++){
-        if (out_data_serial != out_data_parallel){
+        if (out_data_serial[i] != out_data_parallel[i]){
             match = 1;
             break;
         }
