@@ -1,0 +1,128 @@
+{
+    "build_metadata":
+    {
+        "dsa":
+        {
+            "vendor": "xilinx",
+            "board_id": "aws-vu9p-f1",
+            "name": "shell-v04261818",
+            "version_major": "201920",
+            "version_minor": "1",
+            "description": "",
+            "generated_by":
+            {
+                "name": "Vivado",
+                "version": "2019.2",
+                "cl": "2732241",
+                "time_stamp": "Tue Dec 10 14:35:55 2019"
+            },
+            "board":
+            {
+                "name": "",
+                "vendor": "amazon",
+                "part": "",
+                "board_part": ""
+            },
+            "feature_roms":
+            [
+                {
+                    "time_epoch": "0"
+                }
+            ]
+        },
+        "xclbin":
+        {
+            "generated_by":
+            {
+                "name": "v++",
+                "version": "2019.2",
+                "cl": "2700185",
+                "time_stamp": "Thu Oct 24 18:45:48 MDT 2019",
+                "options": "\/opt\/Xilinx\/Vitis\/2019.2\/bin\/unwrapped\/lnx64.o\/v++ -t hw --platform \/home\/centos\/src\/project_data\/aws-fpga\/Vitis\/aws_platform\/xilinx_aws-vu9p-f1_shell-v04261818_201920_1\/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm --save-temps --temp_dir .\/build_dir.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_1 -l -obuild_dir.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_1\/thresholder.xclbin _x.hw.xilinx_aws-vu9p-f1_shell-v04261818_201920_1\/threshold.xo "
+            },
+            "user_regions":
+            [
+                {
+                    "name": "OCL_REGION_0",
+                    "type": "clc_region",
+                    "instance_path": "WRAPPER_INST\/CL",
+                    "base_address": "",
+                    "kernels":
+                    [
+                        {
+                            "name": "threshold",
+                            "ports":
+                            [
+                                {
+                                    "name": "M_AXI_GMEM",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x1000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments":
+                            [
+                                {
+                                    "name": "c",
+                                    "address_qualifier": "1",
+                                    "id": "0",
+                                    "port": "M_AXI_GMEM",
+                                    "size": "0x8",
+                                    "offset": "0x10",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "a",
+                                    "address_qualifier": "1",
+                                    "id": "1",
+                                    "port": "M_AXI_GMEM",
+                                    "size": "0x8",
+                                    "offset": "0x1C",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "n_elements",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x28",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int"
+                                }
+                            ],
+                            "instances":
+                            [
+                                {
+                                    "name": "threshold_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "packaged_by":
+            {
+                "name": "xclbinutil",
+                "version": "2.3.0",
+                "hash": "9e13d57c4563e2c19bf5f518993f6e5a8dadc18a",
+                "time_stamp": "Thu, 06 Feb 2020 15:08:44 +0000"
+            }
+        }
+    }
+}
