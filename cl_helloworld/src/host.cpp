@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 
     // Read in file 
     std::ifstream inf;
-    inf.open("coins.ascii.pgm", std::ios::in);
+    inf.open("src/coins.ascii.pgm", std::ios::in);
  
     // Check the file is open correctly
     if (!inf){
